@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Responsive webpage</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+  <nav class="navbar">
+    <div class="logo">
+      <a href="#"> Biosynthesi<span class="flip-s">s</span></a></div>
+    <!-- Hamburger toggle (hidden on desktop) -->
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Reviews</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul>
+
+    <div class="auth-buttons">
+      <a href="#" class="login">Log in</a>
+      <a href="#" class="signup">Sign up Free</a>
+    </div>
+  </nav>
+  <section class="hero">
+    <span class="tag">Top Agro Researchers</span>
+    <h1>Cultivating Next-Gen Growth<br> in Agriculture</h1>
+    <p>Empowering farmers with smarter tools, <br> bigger yields, and greener solutions</p>
+    <a href="#" class="cta">Get Started →</a>
+    <img src="C:\Users\VICTUS\Desktop\GIT\Progbiz\Images\banner image.jpg" alt="Banner Image" class="hero-banner">
+  </section>
 </body>
 </html>
