@@ -248,29 +248,185 @@ margin: 0 auto 30px auto;
 
 /* Hero Image */
 .hero-banner {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin-top: 30px;
-  border-radius: 20px;
+  width: 100%;         /* Fill container width */
+  height: auto;        /* Maintain aspect ratio */
+  margin-top: 30px;    /* Space above the image */
+  display: block;      /* Remove extra spacing */
+  max-width: 100%;     /* Prevent overflow on small screens */
+  object-fit: cover;   /* Crop nicely if container shrinks */
 }
 
 
-/* Intro Section */
-.intro {
+
+.bio-section {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Top Row */
+.bio-header {
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
-  padding: 60px 40px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  gap: 20px;
 }
 
 .year {
-  font-weight: bold;
-  font-size: 1rem;
-  color: #444;
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+  flex-shrink: 0;
 }
 
-.description {
-  max-width: 600px;
-  font-size: 1rem;
+.bio-text {
+  max-width: 700px;
+  flex: 1;
+}
+
+.bio-text p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.highlight {
+  color: #2e7d4f;
+  font-weight: bold;
+}
+
+/* Image Grid Row */
+.bio-grid {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 0 40px;
+}
+
+
+/* Image Cards */
+.bio-card-wrapper {
+  min-width: 380px;  /* fixed card width */
+  height: 480px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  scroll-snap-align: start;
+}
+
+
+.bio-card {
+  width: 100%;
+  height: 480px;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.bio-card img {
+  width: 100%;
+  height: 85%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.label {
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+/* Position Offsets for Zig-Zag */
+.bio-card-wrapper.up {
+  margin-top: 0;
+}
+
+.bio-card-wrapper.down {
+  margin-top: 60px;
+}
+
+/* Arrows below Image 1 */
+.bio-arrows {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.nav-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ddd;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.nav-btn:hover {
+  background-color: #bbb;
+}
+
+.nav-btn.dark {
+  background-color: #111;
+  color: white;
+}
+
+/* Get Started Now Box */
+.bio-start {
+  position: absolute;
+  top: -70px;
+  background: transparent;
+  text-align: center;
+}
+
+.bio-start h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.arrow-btn {
+  width: 40px;
+  height: 40px;
+  background-color: #4a8d5e;
+  color: white;
+  font-size: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+  .bio-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bio-card-wrapper {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .bio-card-wrapper.down {
+    margin-top: 40px;
+  }
+
+  .bio-start {
+    top: -60px;
+  }
+
+  .bio-header {
+    flex-direction: column;
+  }
+
+  .bio-text {
+    max-width: 100%;
+  }
 }
