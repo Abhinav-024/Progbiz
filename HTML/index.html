@@ -9,12 +9,13 @@
 </head>
 <body>
   <nav class="navbar">
-    <div class="logo">
-      <a href="#"> Biosynthesi<span class="flip-s">s</span></a></div>
+    
     <!-- Hamburger toggle (hidden on desktop) -->
     <input type="checkbox" id="menu-toggle">
     <label for="menu-toggle" class="menu-icon">&#9776;</label>
-    
+    <div class="logo">
+      <a href="#"> Biosynthesi<span class="flip-s">s</span></a>
+    </div>
 
     <ul class="nav-links">
       <li><a href="#">Home</a></li>
@@ -53,20 +54,20 @@
     <!-- Image Row -->
     <div class="bio-grid">
       <!-- Image 1 with arrows -->
-      <div class="bio-card-wrapper up">
+      <div class="bio-card-wrapper up" id="card1">
         <div class="bio-card">
-           <img src="Images\Organic Farm.jpg" alt="Organic Farm">
+           <img src="Images/Organic Farm.jpg" alt="Organic Farm">
           <div class="label">Organic Farm</div>
         </div>
           <div class="bio-arrows">
-            <a href="#card1" class="nav-btn">&#8592;</a>
-            <a href="#card2" class="nav-btn dark">&#8594;</a>
+            <a href="#card4" class="nav-btn">&#8592;</a>
+          <a href="#card2" class="nav-btn dark">&#8594;</a>
           </div>
 
         </div>
 
       <!-- Image 2 lower with Get Started Now above -->
-      <div class="bio-card-wrapper down">
+      <div class="bio-card-wrapper down" id="card2">
         <div class="bio-start">
           <h2>Get<br>Started Now</h2>
           <div class="arrow-btn">&#8599;</div>
@@ -78,7 +79,7 @@
       </div>
 
       <!-- Image 3 up -->
-      <div class="bio-card-wrapper up">
+      <div class="bio-card-wrapper up" id="card3">
         <div class="bio-card">
           <img src="Images\Technology Irrigation.jpg" alt="Technology Irrigation">
           <div class="label">Technology Irrigation</div>
@@ -86,7 +87,7 @@
       </div>
 
       <!-- Image 4 down -->
-      <div class="bio-card-wrapper down">
+      <div class="bio-card-wrapper down" id="card4">
         <div class="bio-card">
           <img src="Images\Agricultural Monitoring.jpg" alt="Agricultural Monitoring">
           <div class="label">Agricultural Monitoring</div>
@@ -94,9 +95,46 @@
       </div>
     </div>
   </section>
-</body>
-</html>
+<section class="visual-break"></section>
+<section class="green-growth">
+  <div class="green-left">
+    <h3>The Green Growth Hub:<br>Innovation &amp; Earthwise</h3>
+  </div>
+  <div class="green-right">
+    <p>
+      Insights, tips, and stories from the world of sustainable farming and innovative agriculture — 
+      offering expert advice, real-world success stories, and the latest trends to help farmers embrace 
+      smarter, eco-friendly practices. From cutting-edge technology to time-tested solutions, we’re here 
+      to inspire and guide you on the journey toward a more sustainable, productive future.
+    </p>
+  </div>
+</section>
 
+<section class="container">
+    <!-- Farming Precision -->
+    <div class="card small">
+      <img src="Images/Rectangle 3.jpg" alt="Farming Precision">
+      <h2>Farming Precision</h2>
+      <p>Optimize your fields, reduce waste, and boost yields with smart, precise farming solutions.</p>
+      <a href="#">Read more <span>&rarr;</span></a>
+    </div>
+
+    <!-- Crop Surveillance -->
+    <div class="card large">
+      <img src="Images/Rectangle 5.jpg" alt="Crop Surveillance">
+      <h2>Crop Surveillance</h2>
+      <p>Monitor crop health in real-time with smart tools that detect issues early and protect your yield.</p>
+      <a href="#">Read more <span>&rarr;</span></a>
+    </div>
+
+    <!-- Automated Farming -->
+    <div class="card small">
+      <img src="Images/Rectangle 4.jpg" alt="Automated Farming">
+      <h2>Automated Farming</h2>
+      <p>Streamline your farm operations with smart automation for faster, easier, and more efficient growth.</p>
+      <a href="#">Read more <span>&rarr;</span></a>
+    </div>
+  </section>
 
 </body>
 </html>
