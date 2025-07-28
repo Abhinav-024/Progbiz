@@ -4,10 +4,21 @@
   <meta charset="UTF-8">
   <title>Responsive webpage</title>
   <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+ <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  integrity="sha512-pO2e5lmAq+6RmX4o7Ssh4oDRXWQZnT6RzzA3o3HYDgMTvM4BzWgJp5FL5qKLSv20ZWJ6v1QwEvGg1gdZUnVJmA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+
+
 </head>
 <body>
+  <div class="page-container">
   <nav class="navbar">
     
     <!-- Hamburger toggle (hidden on desktop) -->
@@ -30,14 +41,21 @@
       <a href="#" class="signup">Sign up Free</a>
     </div>
   </nav>
-  <section class="hero">
-    <span class="tag">Top Agro Researchers</span>
-    <h1>Cultivating Next-Gen Growth<br> in Agriculture</h1>
-    <p>Empowering farmers with smarter tools, <br> bigger yields, and greener solutions</p>
-    <a href="#" class="cta">Get Started →</a>
-    <img src="Images/banner-image.jpg" alt="Banner Image" class="hero-banner">
-  </section>
+  </div>
   
+  <section class="hero">
+  <span class="tag">Top Agro Researchers</span>
+  <h1>Cultivating Next-Gen Growth<br> in Agriculture</h1>
+  <p>Empowering farmers with smarter tools, <br> bigger yields, and greener solutions</p>
+  <a href="#" class="cta">Get Started →</a>
+
+  <!-- ✅ NEW CONTAINER -->
+  <div class="hero-banner-container">
+    <img src="Images/banner-image.jpg" alt="Banner Image" class="hero-banner">
+  </div>
+</section>
+
+  <div class="container">
   <section class="bio-section">
     <!-- Top Row -->
     <div class="bio-header">
@@ -50,91 +68,127 @@
         </p>
       </div>
     </div>
-
+    </section>
+  </div>
+    
+    
     <!-- Image Row -->
-    <div class="bio-grid">
-      <!-- Image 1 with arrows -->
-      <div class="bio-card-wrapper up" id="card1">
-        <div class="bio-card">
-           <img src="Images/Organic Farm.jpg" alt="Organic Farm">
-          <div class="label">Organic Farm</div>
-        </div>
-          <div class="bio-arrows">
-            <a href="#card4" class="nav-btn">&#8592;</a>
-          <a href="#card2" class="nav-btn dark">&#8594;</a>
-          </div>
-
-        </div>
-
-      <!-- Image 2 lower with Get Started Now above -->
-      <div class="bio-card-wrapper down" id="card2">
-        <div class="bio-start">
-          <h2>Get<br>Started Now</h2>
-          <div class="arrow-btn">&#8599;</div>
-        </div>
-        <div class="bio-card">
-            <img src="Images\Organic Fertilizer.jpg" alt="Organic Fertilizer">
-          <div class="label">Organic Fertilizer</div>
-        </div>
-      </div>
-
-      <!-- Image 3 up -->
-      <div class="bio-card-wrapper up" id="card3">
-        <div class="bio-card">
-          <img src="Images\Technology Irrigation.jpg" alt="Technology Irrigation">
-          <div class="label">Technology Irrigation</div>
-        </div>
-      </div>
-
-      <!-- Image 4 down -->
-      <div class="bio-card-wrapper down" id="card4">
-        <div class="bio-card">
-          <img src="Images\Agricultural Monitoring.jpg" alt="Agricultural Monitoring">
-          <div class="label">Agricultural Monitoring</div>
-        </div>
+  
+ <div class="bio-grid-container">
+  <div class="bio-grid">
+    <!-- Image Card 1 -->
+    <div class="bio-card-wrapper up" id="card1">
+      <div class="bio-card">
+        <img src="Images/Organic Farm.jpg" alt="Organic Farm">
+        
+      </div><div class="label">Organic Farm</div>
+      <div class="bio-arrows">
+        <button class="nav-btn">&#10094;</button>
+        <button class="nav-btn dark">&#10095;</button>
       </div>
     </div>
-  </section>
-<section class="visual-break"></section>
-<section class="green-growth">
-  <div class="green-left">
-    <h3>The Green Growth Hub:<br>Innovation &amp; Earthwise</h3>
+
+    <!-- Image Card 2 -->
+    <div class="bio-card-wrapper down" id="card2">
+  <div class="bio-top-row">
+    <h2 class="start-now">Get<br>Started Now</h2>
+    <div class="arrow-btn">&#8599;</div>
   </div>
-  <div class="green-right">
-    <p>
-      Insights, tips, and stories from the world of sustainable farming and innovative agriculture — 
-      offering expert advice, real-world success stories, and the latest trends to help farmers embrace 
-      smarter, eco-friendly practices. From cutting-edge technology to time-tested solutions, we’re here 
-      to inspire and guide you on the journey toward a more sustainable, productive future.
-    </p>
+
+  <div class="bio-card">
+    <img src="Images/Organic Fertilizer.jpg" alt="Organic Fertilizer">
+  </div>
+
+  <div class="label">Organic Fertilizer</div>
+</div>
+
+
+    <!-- Image Card 3 -->
+    <div class="bio-card-wrapper up" id="card3">
+      <div class="bio-card">
+        <img src="Images/Technology Irrigation.jpg" alt="Technology Irrigation">
+        
+      </div>
+      <div class="label">Technology Irrigation</div>
+    </div>
+
+    <!-- Image Card 4 -->
+    <div class="bio-card-wrapper down" id="card4">
+      <div class="bio-card">
+        <img src="Images/Agricultural Monitoring.jpg" alt="Agricultural Monitoring">
+        
+      </div><div class="label">Agricultural Monitoring</div>
+    </div>
+  </div>
+</div>
+
+
+<section class="feature-banner">
+  <div class="feature-wrapper">
+    <h2>Transform Your Farm.<br>Empower Your Future.</h2>
+    <img src="Images/Cta banner.jpg" alt="CTA Banner" class="feature-image" />
+    <a href="#" class="banner-cta">&#8599;</a>
   </div>
 </section>
 
+
+
+<!-- <section class="visual-break"></section> -->
+<section class="green-growth-hub">
+  <div class="green-growth-content">
+    <div class="green-heading">
+      <h2>The Green Growth Hub:<br>Innovation & Earthwise</h2>
+    </div>
+    <div class="green-paragraph">
+      <p>
+        Insights, tips, and stories from the world of sustainable farming and innovative agriculture — 
+        offering expert advice, real-world success stories, and the latest trends to help farmers embrace 
+        smarter, eco-friendly practices. From cutting-edge technology to time-tested solutions, we’re here 
+        to inspire and guide you on the journey toward a more sustainable, productive future.
+      </p>
+    </div>
+  </div>
+</section>
+
+
 <section class="container">
-    <!-- Farming Precision -->
-    <div class="card small">
+  <!-- Farming Precision -->
+  <div class="card small">
+    <div class="image-wrapper small">
       <img src="Images/Rectangle 3.jpg" alt="Farming Precision">
-      <h2>Farming Precision</h2>
-      <p>Optimize your fields, reduce waste, and boost yields with smart, precise farming solutions.</p>
-      <a href="#">Read more <span>&rarr;</span></a>
     </div>
+    <div class="text-content">
+    <h2>Farming Precision</h2>
+    <p>Optimize your fields, reduce waste, and boost yields with smart, precise farming solutions.</p>
+    <a href="#">Read more <span>&rarr;</span></a>
+    </div>
+  </div>
 
-    <!-- Crop Surveillance -->
-    <div class="card large">
+  <!-- Crop Surveillance -->
+  <div class="card large">
+    <div class="image-wrapper large">
       <img src="Images/Rectangle 5.jpg" alt="Crop Surveillance">
-      <h2>Crop Surveillance</h2>
-      <p>Monitor crop health in real-time with smart tools that detect issues early and protect your yield.</p>
-      <a href="#">Read more <span>&rarr;</span></a>
     </div>
+    <div class="text-content">
+    <h2>Crop Surveillance</h2>
+    <p>Monitor crop health in real-time with smart tools that detect issues early and protect your yield.</p>
+    <a href="#">Read more <span>&rarr;</span></a>
+    </div>
+  </div>
 
-    <!-- Automated Farming -->
-    <div class="card small">
+  <!-- Automated Farming -->
+  <div class="card small">
+    <div class="image-wrapper small">
       <img src="Images/Rectangle 4.jpg" alt="Automated Farming">
-      <h2>Automated Farming</h2>
-      <p>Streamline your farm operations with smart automation for faster, easier, and more efficient growth.</p>
-      <a href="#">Read more <span>&rarr;</span></a>
     </div>
-  </section>
+    <div class="text-content">
+    <h2>Automated Farming</h2>
+    <p>Streamline your farm operations with smart automation for faster, easier, and more efficient growth.</p>
+    <a href="#">Read more <span>&rarr;</span></a>
+    </div>
+  </div>
+</section>
+
 
   <section class="contact-section">
   <div class="contact-form">
@@ -158,19 +212,38 @@
 </section>
 
 
+<div class="footer-page-container">
 <footer class="footer">
+  <div class="footer-wrapper">
   <div class="footer-container">
+    
+    <!-- Brand / Left Section -->
     <div class="footer-brand">
-      <h2 class="logo">🌿 Biosynthesi<span style="color:#fff;">s</span></h2>
-      <p>Monitor crop health in real-time with smart tools that detect issues early and protect your yield.</p>
+      <h2 class="logo">Biosynthesi<span class="flipped-s">s</span></h2>
+      <p>
+        Monitor crop health in real-time with smart tools that detect issues early and protect your yield.
+      </p>
       <div class="social-icons">
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-x-twitter"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-      </div>
+  <a href="#" class="social-icon" aria-label="Instagram">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7.5 2C4.46 2 2 4.46 2 7.5v9C2 19.54 4.46 22 7.5 22h9c3.04 0 5.5-2.46 5.5-5.5v-9C22 4.46 19.54 2 16.5 2h-9zm0 2h9c1.96 0 3.5 1.54 3.5 3.5v9c0 1.96-1.54 3.5-3.5 3.5h-9C5.54 20 4 18.46 4 16.5v-9C4 5.54 5.54 4 7.5 4zm9.25 1.5a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5zM12 7.5a4.5 4.5 0 100 9 4.5 4.5 0 000-9zm0 2a2.5 2.5 0 110 5 2.5 2.5 0 010-5z"/></svg>
+  </a>
+
+  <a href="#" class="social-icon" aria-label="LinkedIn">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4zM8.5 8h3.5v2.17h.05c.49-.9 1.68-1.85 3.45-1.85 3.69 0 4.37 2.43 4.37 5.59V24h-4v-7.4c0-1.77-.03-4.04-2.46-4.04-2.46 0-2.84 1.92-2.84 3.91V24h-4V8z"/></svg>
+  </a>
+
+  <a href="#" class="social-icon" aria-label="X (Twitter)">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.23 4.23 0 001.85-2.34 8.39 8.39 0 01-2.68 1.02 4.22 4.22 0 00-7.22 3.85A11.97 11.97 0 013 4.87a4.22 4.22 0 001.31 5.64A4.2 4.2 0 012 9.5v.05a4.22 4.22 0 003.39 4.14c-.43.12-.88.18-1.34.18-.33 0-.65-.03-.96-.09a4.23 4.23 0 003.94 2.93A8.47 8.47 0 012 19.54a11.92 11.92 0 006.29 1.84c7.55 0 11.69-6.26 11.69-11.69 0-.18 0-.36-.01-.53a8.4 8.4 0 002.07-2.14z"/></svg>
+  </a>
+
+  <a href="#" class="social-icon" aria-label="Facebook">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.1C22 6.64 17.52 2 12 2S2 6.64 2 12.1c0 5.02 3.66 9.18 8.44 9.88v-6.99h-2.54v-2.89h2.54v-2.2c0-2.5 1.5-3.88 3.8-3.88 1.1 0 2.25.2 2.25.2v2.48h-1.27c-1.25 0-1.64.78-1.64 1.58v1.83h2.8l-.45 2.89h-2.35v6.99C18.34 21.28 22 17.12 22 12.1z"/></svg>
+  </a>
+</div>
+
     </div>
 
+    <!-- Link Columns -->
     <div class="footer-links">
       <div>
         <h4>COMPANY</h4>
@@ -214,7 +287,13 @@
       </div>
     </div>
   </div>
+
+  <!-- Background Text -->
+  <div class="background-text">REEP TO GROW</div>
+</div>
+</div>
 </footer>
+
 
 </body>
 </html>
