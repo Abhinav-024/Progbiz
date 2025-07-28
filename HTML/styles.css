@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -33,8 +37,8 @@ body {
 }
 
 .logo a:hover {
-  color: #212529; /* darker or themed color */
-  transform: scale(1.05); /* slightly enlarge */
+  color: #212529; 
+  transform: scale(1.05); 
   cursor: pointer;
 }
 
@@ -242,7 +246,7 @@ html {
   content: '';
   width: 13px;
   height: 13px;
-  background-color: #3F7D58; /* Material Green */
+  background-color: #3F7D58; 
   border-radius: 50%;
   display: inline-block;
 }
@@ -255,12 +259,12 @@ font-size: 74px;
 line-height: 83px;
 text-align: center;
 letter-spacing: -0.03em;
-margin-bottom: 30px; /* Reduced space below h1 */
+margin-bottom: 30px; 
 
 }
 
 .hero p {
- /* Empowering farmers with smarter tools, bigger yields, and greener solutions */
+ 
 
 font-family: 'Open Sans';
 font-style: normal;
@@ -361,11 +365,11 @@ margin: 0 auto 30px auto;
 @media (max-width: 768px) {
   .bio-header {
     flex-direction: column;
-    align-items: center;     /* ✅ Center horizontally */
+    align-items: center;    
     gap: 12px;
     padding: 0 20px;
     margin-bottom: 20px;
-    text-align: center;      /* ✅ Center text content */
+    text-align: center;     
   }
 
   .year {
@@ -376,7 +380,7 @@ margin: 0 auto 30px auto;
   }
 
   .bio-text {
-    text-align: center;      /* ✅ Center paragraph text */
+    text-align: center;      
     max-width: 90%;
     width: 100%;
   }
@@ -451,7 +455,7 @@ margin: 0 auto 30px auto;
 /* Controls above image */
 .bio-top-row {
   position: absolute;
-  top: -90px; /* exactly aligns with top of card 1 */
+  top: -90px; 
   left: 0;
   right: 0;
   display: flex;
@@ -539,7 +543,7 @@ margin: 0 auto 30px auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px; /* space between text and arrow */
+  gap: 12px; 
   padding: 0 10px;
 }
 
@@ -608,7 +612,7 @@ margin: 0 auto 30px auto;
   }
 
   #card2 .bio-card {
-    margin-top: 10px; /* reduce spacing on mobile */
+    margin-top: 10px; 
   }
 }
 
@@ -692,21 +696,52 @@ margin: 0 auto 30px auto;
 
 /* Responsive for small screens */
 @media (max-width: 768px) {
+  .feature-banner {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .feature-wrapper {
+    width: 100vw;
+    height: auto;
+    aspect-ratio: auto;
+  }
+
+  .feature-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
+
   .feature-wrapper h2 {
-    top: 20px;
+    position: absolute;
+    top: 32px;
     left: 20px;
     font-size: 24px;
-    max-width: 90%;
+    max-width: 80%;
+    color: white;
+    line-height: 1.4;
   }
 
   .banner-cta {
+    position: absolute;
     bottom: 20px;
     right: 20px;
-    width: 50px;
-    height: 50px;
+    width: 48px;
+    height: 48px;
     font-size: 20px;
+    background-color: #3f7d58;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
   }
 }
+
 
 
 
@@ -756,7 +791,7 @@ margin: 0 auto 30px auto;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 30px; /* Equal spacing between cards */
+  gap: 30px; 
   padding: 60px 20px;
   max-width: 1440px;
   margin: 0 auto;
@@ -798,19 +833,19 @@ margin: 0 auto 30px auto;
   .container {
     flex-direction: column;
     align-items: center;
-    gap: 40px; /* Optional: vertical spacing between stacked cards */
+    gap: 40px; 
     flex-wrap: nowrap;
   }
 
   .card {
-    align-items: center; /* Center text and image */
+    align-items: center; 
     text-align: center;
   }
 
   .image-wrapper.small,
   .image-wrapper.large {
     width: 90vw;
-    height: auto; /* Maintain aspect ratio on smaller screens */
+    height: auto; 
   }
 
   .image-wrapper img {
@@ -819,7 +854,7 @@ margin: 0 auto 30px auto;
 }
 
 
-/* Text block is restricted to image width */
+
 .card.small .text-content {
   width: 345px;
 }
@@ -837,7 +872,7 @@ margin: 0 auto 30px auto;
 }
 
 .text-content p {
-  font-size: 20;
+  font-size: 20px;
   font-weight: 500;
   color: #636363;
   margin-bottom: 12px;
@@ -1024,7 +1059,7 @@ margin: 0 auto 30px auto;
 .flipped-s {
   display: inline-block;
   transform: scaleX(-1);
-  color: #fff; /* Keep it same as before */
+  color: #fff; 
 }
 
 
